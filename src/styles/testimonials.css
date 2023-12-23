@@ -1,0 +1,136 @@
+.testimonials {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 7rem 0;
+}
+
+.testimonials .our-testy {
+  width: 100%;
+  height: auto;
+  padding: 7rem 0;
+  background-color: rgba(25, 25, 25, 0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.testimonials .our-testy .heading {
+  width: 100%;
+  padding: 0 8%;
+  text-align: center;
+}
+
+.testimonials .our-testy .heading h1 {
+  font-size: 2.25em;
+  color: var(--background-color);
+  line-height: normal;
+}
+
+.testimonials .our-testy .heading-viewport {
+  overflow: hidden;
+}
+
+.testimonials .our-testy .heading-viewport .heading-content {
+  width: 100%;
+  display: flex;
+}
+
+.testimonials .our-testy .heading-viewport .heading-content .content {
+  flex: 0 0 100%;
+  height: auto;
+  padding: 0 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.testimonials .our-testy .heading-viewport .heading-content .content .icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--background-color);
+  color: var(--background-color);
+  margin: auto;
+}
+
+.testimonials .our-testy .heading-viewport .heading-content .content .icon svg {
+  font-size: 2.5rem;
+}
+
+.testimonials .our-testy .heading-viewport .heading-content .content h2 {
+  color: var(--background-color);
+  text-align: center;
+  line-height: normal;
+}
+
+.testimonials .our-testy .heading-viewport .heading-content .content .underline {
+  width: 3rem;
+  height: 3px;
+  background-color: var(--main-secondary-color);
+}
+
+.testimonials .our-testy .heading-viewport .heading-content .content .clients {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.testimonials .our-testy .heading-viewport .heading-content .content .clients .name {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--background-color);
+}
+
+.testimonials .our-testy .heading-viewport .heading-content .content .clients span {
+  color: var(--background-color);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.testimonials .our-testy .heading-viewport .selected {
+  width: 100%;
+  position: absolute;
+  bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.selected .dots {
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  background: var(--main-primary-color);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.selected .dots-active {
+  border: none;
+  background: var(--main-secondary-color);
+}
+
+.selected .dots .dot-button {
+  display: none;
+}
+
+@media screen and (min-width: 640px) {
+  .testimonials .our-testy .heading h1 {
+    font-size: 3em;
+  }
+}

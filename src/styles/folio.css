@@ -1,0 +1,184 @@
+.folio {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.folio .our-works {
+  width: 100%;
+  padding: 0 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.folio .our-works h1 {
+  text-align: center;
+  font-size: 2.25em;
+  line-height: 0.8em;
+  color: var(--header-color);
+}
+
+.folio .our-works span {
+  width: 3rem;
+  height: 3px;
+  background-color: var(--main-secondary-color);
+  display: block;
+  margin: auto;
+}
+
+.folio .our-works p {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.folio .filtering {
+  width: 100%;
+  height: auto;
+  padding: 0 8%;
+}
+
+.folio .filtering ul {
+  list-style-type: none;
+  display: none;
+}
+
+.folio .filtering ul li {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: var(--header-color);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color, color, 300ms ease-in-out;
+}
+
+.folio .filtering ul li:hover,
+.folio .filtering ul li.active {
+  background-color: var(--main-secondary-color);
+  color: var(--background-color);
+}
+
+.folio .filtering .dropdown {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.folio .filtering .dropdown .selected-category {
+  width: 12rem;
+  height: 3rem;
+  border-radius: 8px;
+  border: 1px solid var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.folio .filtering .dropdown .selected-category .arrow {
+  color: var(--header-color);
+  font-size: 16px;
+}
+
+.folio .filtering .dropdown .dropdown-menu {
+  width: 12rem;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(153, 153, 153, 0.12);
+}
+
+.folio .filtering .dropdown .dropdown-menu li {
+  width: 100%;
+  padding: 0.5rem 8px;
+  background-color: transparent;
+  color: var(--header-color);
+  font-size: 18px;
+}
+
+.folio .filtering .dropdown .dropdown-menu li:hover {
+  background-color: rgb(255, 94, 0, 0.12);
+}
+
+.folio .folio-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.folio .folio-content .content {
+  flex: 0 1 100%;
+  height: 15rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.folio .folio-content .content .layer {
+  width: 100%;
+  height: 0;
+  background-color: transparent;
+  transition: background-color, height, 300ms ease-in-out;
+}
+
+.folio .folio-content .content .layer p {
+  width: 100%;
+  height: 4rem;
+  display: none;
+  padding: 0 0.75rem;
+  font-size: 18px;
+  transition: all 300ms ease-in-out;
+}
+
+.folio .folio-content .content:hover .layer {
+  height: 100%;
+  background-color: rgba(25, 25, 25, 0.75);
+  display: flex;
+  align-items: flex-end;
+}
+
+.folio .folio-content .content:hover .layer p {
+  display: flex;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--main-secondary-color);
+}
+
+@media screen and (min-width: 480px) {
+  .folio .folio-content .content {
+    flex: 0 1 50%;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .folio .our-works h1 {
+    font-size: 3em;
+  }
+
+  .folio .filtering ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .folio .filtering .dropdown {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .folio .folio-content .content {
+    flex: 0 1 33%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .folio .folio-content .content {
+    flex: 0 1 25%;
+  }
+}

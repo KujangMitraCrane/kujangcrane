@@ -1,0 +1,53 @@
+.cooperation {
+  width: 100%;
+  height: auto;
+  padding: 7rem 8%;
+  background-color: rgb(153, 153, 153, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.cooperation .companies {
+  flex: 0 1 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cooperation .companies img {
+  width: auto;
+  height: 7rem;
+  filter: grayscale(100%);
+  transition: filter 300ms ease-in-out;
+}
+
+.cooperation .companies img:hover {
+  filter: grayscale(0);
+}
+
+@media screen and (min-width: 640px) {
+  .cooperation .companies {
+    flex: 0 1 45%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cooperation {
+    justify-content: space-between;
+  }
+
+  .cooperation .companies {
+    flex: 0 1 25%;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  /* .cooperation {
+    justify-content: space-between;
+  } */
+
+  .cooperation .companies {
+    flex: 0 1 17%;
+  }
+}

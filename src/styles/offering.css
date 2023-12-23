@@ -1,0 +1,213 @@
+.offering {
+  width: 100%;
+  height: auto;
+  padding: 7rem 8% 4rem 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.offering .our-offer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.offering .our-offer .arrow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.offering .our-offer .headline {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.offering .our-offer .headline h1 {
+  font-size: 2.25em;
+  line-height: 0.9em;
+  color: var(--header-color);
+}
+
+.offering .our-offer .headline span {
+  display: block;
+  width: 3rem;
+  height: 3px;
+  background-color: var(--main-secondary-color);
+}
+
+.offering .our-offer .headline p {
+  width: 100%;
+  color: var(--text-color);
+}
+
+.offering .our-offer .arrow .previousMove,
+.offering .our-offer .arrow .nextMove {
+  padding: 0 0;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--main-secondary-color);
+  color: var(--background-color);
+  border: none;
+  border-bottom: 3px solid var(--main-secondary-color);
+  transition: background-color, color, 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.offering .our-offer .arrow .previousMove svg,
+.offering .our-offer .arrow .nextMove svg {
+  font-size: 50px;
+  transform: translateY(2px);
+}
+
+.offering .our-offer .arrow .previousMove:hover,
+.offering .our-offer .arrow .nextMove:hover {
+  background-color: var(--background-color);
+  color: var(--main-secondary-color);
+}
+
+.offering .offer-viewport {
+  overflow-x: hidden;
+}
+
+.offering .offer-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  touch-action: pan-y;
+  margin-left: 0;
+  padding-bottom: 3rem;
+}
+
+.offering .offer-content .content {
+  flex: 0 0 100%;
+  margin-left: 2rem;
+  box-shadow: 0 2.5px 5px rgba(25, 25, 25, 0.12);
+  background-color: var(--background-color);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
+.offering .offer-content .content::before {
+  content: '';
+  width: 0;
+  height: 6px;
+  background-color: var(--main-secondary-color);
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 300ms ease-in-out;
+}
+
+.offering .offer-content .content:hover::before {
+  width: 100%;
+}
+
+.offering .offer-content .content .image {
+  width: 100%;
+  height: 15rem;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.offering .offer-content .content .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1);
+  transition: transform 500ms ease-in-out;
+}
+
+.offering .offer-content .content .image img:hover {
+  transform: scale(1.2);
+}
+
+.offering .offer-content .content .desc {
+  width: 100%;
+  padding: 0 15px;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.offering .offer-content .content .desc label {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  color: var(--text-color);
+}
+
+.offering .offer-content .content .desc label h2 {
+  color: var(--header-color);
+}
+
+.offering .offer-content .content .desc .price,
+.offering .offer-content .content .desc .specs {
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.offering .offer-content .content .desc .price label {
+  color: var(--main-secondary-color);
+  font-size: 2em;
+  margin: -1px 0 0 -1.5px;
+}
+
+.offering .offer-content .content .desc .specs label {
+  color: var(--header-color);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 640px) {
+  .offering .our-offer .headline h1 {
+    font-size: 3em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .offering .our-offer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .offering .our-offer .headline {
+    width: 50%;
+  }
+
+  .offering .offer-content .content {
+    flex: 0 0 47%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .offering .offer-content {
+    margin-left: 0;
+  }
+
+  .offering .offer-content .content {
+    flex: 0 0 30.6%;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  .offering .offer-content .content {
+    flex: 0 0 31.27%;
+  }
+}

@@ -1,0 +1,87 @@
+.support {
+  width: 100%;
+  height: auto;
+  background-color: var(--main-secondary-color);
+  padding: 1rem 8%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.support .cs-support {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.support .cs-support span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--background-color);
+  cursor: default;
+  transition: color 300ms ease-in-out;
+}
+
+.support .cs-support span svg {
+  font-size: 20px;
+}
+
+.support .cs-support span:hover,
+.support .social-media svg:hover,
+.support .admin .login:hover,
+.support .admin .register:hover {
+  color: var(--header-color);
+}
+
+.support .social-media {
+  width: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(---background-color);
+}
+
+.support .social-media svg {
+  color: var(--background-color);
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 300ms ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .support .cs-support {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .support .social-media {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .support .cs-support {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .support .cs-support {
+    width: auto;
+    justify-content: flex-start;
+  }
+
+  .support .social-media {
+    width: auto;
+    justify-content: flex-end;
+  }
+}

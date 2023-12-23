@@ -1,0 +1,118 @@
+.faq {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: rgb(153, 153, 153, 0.1);
+}
+
+.faq .why-us {
+  width: 100%;
+  height: auto;
+  padding: 7rem 8% 0 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faq .why-us h1 {
+  color: var(--header-color);
+  font-size: 2.25em;
+  text-align: center;
+}
+
+.faq .why-us span {
+  width: 3rem;
+  height: 3px;
+  background-color: var(--main-secondary-color);
+  margin: auto;
+}
+
+.faq .why-us .rendered {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.faq .why-us .rendered .accordion {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.faq .why-us .rendered .accordion .accordion-label {
+  width: 100%;
+  background-color: var(--main-secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10px 1rem 15px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq .why-us .rendered .accordion .accordion-label label {
+  width: 100%;
+  font-size: 18px;
+  color: var(--background-color);
+  font-weight: 500;
+}
+
+.faq .why-us .rendered .accordion .accordion-label svg {
+  font-size: 25px;
+  color: var(--background-color);
+}
+
+.faq .why-us .rendered .accordion .accordion-content {
+  width: 100%;
+  max-height: 100%;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(25, 25, 25, 0.1);
+  color: var(--text-color);
+}
+
+.faq .faqImage {
+  display: none;
+}
+
+.faq .faqImage .image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 640px) {
+  .faq .why-us {
+    align-items: flex-start;
+  }
+
+  .faq .why-us h1 {
+    font-size: 3em;
+    text-align: left;
+  }
+
+  .faq .why-us span {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .faq .why-us {
+    flex: 50%;
+    padding: 7rem 0 7rem 8%;
+  }
+
+  .faq .faqImage {
+    flex: 50%;
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+}
