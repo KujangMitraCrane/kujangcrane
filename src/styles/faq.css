@@ -5,6 +5,7 @@
   justify-content: space-between;
   gap: 2rem;
   background-color: rgb(153, 153, 153, 0.1);
+  margin-top: 7rem;
 }
 
 .faq .why-us {
@@ -106,13 +107,14 @@
 @media screen and (min-width: 1024px) {
   .faq .why-us {
     flex: 50%;
-    padding: 7rem 0 7rem 8%;
+    padding: 0 0 0 0;
+    padding: 7rem 0 0 8%;
   }
 
   .faq .faqImage {
     flex: 50%;
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
   }
 }

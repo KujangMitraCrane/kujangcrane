@@ -4,17 +4,17 @@ import { FaCheck } from 'react-icons/fa6';
 const FooterServices = () => {
   return (
     <>
-      <label>Our Services</label>
+      <label>Layanan Kami</label>
       <span className="underline" />
       <ul>
         <li>
-          <FaCheck /> Mining
+          <FaCheck /> Warehouses
         </li>
         <li>
           <FaCheck /> High rise buildings
         </li>
         <li>
-          <FaCheck /> Factories & warehouses
+          <FaCheck /> Real Estate
         </li>
         <li>
           <FaCheck /> Civil construction

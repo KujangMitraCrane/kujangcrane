@@ -112,7 +112,7 @@ form .identity input {
 form .message {
   flex: 100%;
   width: 100%;
-  height: auto;
+  height: 5rem;
   color: var(--text-color);
 }
 
@@ -132,6 +132,7 @@ form .actions {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 
 form .actions .submit {
@@ -139,7 +140,7 @@ form .actions .submit {
   cursor: pointer;
   background-color: var(--main-secondary-color);
   border: 2px solid var(--main-secondary-color);
-  border-radius: 2.5rem;
+  border-radius: 5px;
   color: var(--background-color);
   transition: background-color, color, 500ms ease-in-out;
 }
@@ -163,6 +164,15 @@ form .actions .submit:hover {
   form .identity,
   form .message {
     flex: 1 0 40%;
+  }
+
+  form .message {
+    height: auto;
+  }
+
+  form .message textarea {
+    width: 100%;
+    height: 100%;
   }
 }
 

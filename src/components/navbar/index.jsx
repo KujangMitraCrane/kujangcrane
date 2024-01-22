@@ -15,7 +15,7 @@ const Navbar = ({ isScrolled }) => {
   return (
     <div className={`navbar ${isScrolled ? 'fixed' : ''}`}>
       <div className="logo">
-        <h1 onClick={() => navigate('/')}>Arsan</h1>
+        <h1 onClick={() => navigate('/')}>KMC</h1>
       </div>
       <nav className="navlink">
         <LinkNavbar onClose={() => setIsNavbar(false)} />

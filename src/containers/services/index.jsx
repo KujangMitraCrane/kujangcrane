@@ -6,9 +6,9 @@ const Services = () => {
   return (
     <div className="services" id="services">
       <div className="our-services">
-        <h1>Our Services</h1>
+        <h1>Layanan Kami</h1>
         <span />
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde aliquam cum adipisci soluta ullam.</p>
+        <p>Kujang Mitra Crane memberikan full support layanan kepada customer sesuai kebutuhan.</p>
       </div>
       <div className="services-content">
         {servicesData.map((service) => (
@@ -19,7 +19,7 @@ const Services = () => {
             <div className="desc">
               <h3>{service.title}</h3>
               <span />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>{service.desc}</p>
             </div>
           </div>
         ))}

@@ -6,6 +6,10 @@ import FooterServices from './footerServices';
 import FooterMap from './footerMap';
 import { Link } from 'react-router-dom';
 
+const DISCLAIMER = 'https://www.privacypolicyonline.com/live.php?token=1Q1m9JiZUfmmEt97hMpQTiKH3JA9lVn4';
+const PRIVACYPOLICY = 'https://www.privacypolicyonline.com/live.php?token=SZQEOtUUlyv4ou0QadNg8UjocNZoA3JS';
+const TERMCONDITION = 'https://www.privacypolicyonline.com/live.php?token=qGC1bVdRWplyMUzEBvsTDjxeVBGy7EfL';
+
 const Footer = () => {
   return (
     <div className="footer">
@@ -22,12 +26,18 @@ const Footer = () => {
       </div>
       <div className="copyright">
         <div className="license">
-          <FaRegCopyright /> Copyright 2023 arsanIndonesia.com by Naudhilcorp
+          <FaRegCopyright /> Copyright 2024 kujangmitracrane.com
         </div>
         <div className="privacy">
-          <Link>Disclaimer</Link>
-          <Link>Privacy Policy</Link>
-          <Link>Term & Conditions</Link>
+          <Link to={DISCLAIMER} target="_blank">
+            Disclaimer
+          </Link>
+          <Link to={PRIVACYPOLICY} target="_blank">
+            Privacy Policy
+          </Link>
+          <Link to={TERMCONDITION} target="_blank">
+            Term & Conditions
+          </Link>
         </div>
       </div>
     </div>

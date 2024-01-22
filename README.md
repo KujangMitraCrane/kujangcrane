@@ -1,8 +1,8 @@
-Arsan Indonesia
+Kujang Mitra Crane
 
-We build a construction template website. We build this website using Reactjs. The purpose we build them are to reference other developer or companies that businesses in construction.
+The website was build by ReactJS. As you know, ReactJS is a library for javascript that affect a powerful web & native user interfaces.
 
-We created this website using white and orange and a little gray. Because the color white shows a clean and clear company, which of course reflects professionalism. And orange is a color full of energy and creativity. The combination of white and orange further emphasizes the company's identity and supports safety when carrying out work on construction sites.
+As you can see, this website was build by the main color is white and the support color is orange. That mean the white color is given clean, discipline, professional. And the orange color's mean secure and warning that suit for constrution website.
 
 The following are the specifications for the Arsan Indonesia website;
 

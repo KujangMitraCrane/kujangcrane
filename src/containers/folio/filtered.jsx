@@ -30,12 +30,36 @@ const Filtered = (props) => {
         Infrastructures
       </li>
       <li
-        className={selectedCategory === 'Material lift' ? 'active' : ''}
+        className={selectedCategory === 'Material Lift' ? 'active' : ''}
         onClick={() => {
-          handleCategory('Material lift');
+          handleCategory('Material Lift');
         }}
       >
-        Material lift
+        Material Lift
+      </li>
+      <li
+        className={selectedCategory === 'Warehouses' ? 'active' : ''}
+        onClick={() => {
+          handleCategory('Warehouses');
+        }}
+      >
+        Warehouses
+      </li>
+      <li
+        className={selectedCategory === 'High Rise Buldings' ? 'active' : ''}
+        onClick={() => {
+          handleCategory('High Rise Buildings');
+        }}
+      >
+        High Rise Buildings
+      </li>
+      <li
+        className={selectedCategory === 'Real Estate' ? 'active' : ''}
+        onClick={() => {
+          handleCategory('Real Estate');
+        }}
+      >
+        Real Estate
       </li>
     </ul>
   );

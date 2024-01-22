@@ -10,14 +10,14 @@ const ContactInfo = () => {
         </i>
         <div>
           <label>Phone:</label>
-          <p>+62 8123456</p>
+          <p>+62 81511020455</p>
         </div>
       </span>
       <span className="location">
         <i className="icon">
           <IoLocation />
         </i>
-        <p>Jl. Raya Sukabumi, Telukpinang, Kec. Ciawi - Bogor</p>
+        <p>Jl. Mayjen H.R. Edi Sukma, Tlk. Pinang, Kec. Ciawi, Bogor - Jawa Barat</p>
       </span>
       <span className="email">
         <i className="icon">
@@ -25,7 +25,7 @@ const ContactInfo = () => {
         </i>
         <div>
           <label>E-mail:</label>
-          <p>example@arsan.com</p>
+          <p>kujangmitracrane@gmail.com</p>
         </div>
       </span>
     </>

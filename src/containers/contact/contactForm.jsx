@@ -33,9 +33,9 @@ const ContactForm = () => {
           <textarea placeholder="Message *" required onChange={(e) => setMessage(e.target.value)} value={message} />
         </div>
         <div className="actions">
-          <p>We will contact you within one business day</p>
+          <p>Kami akan hubungi anda dalam 1 hari jam kerja</p>
           <button className="submit" type="submit">
-            Send Message
+            Kirim Pesan
           </button>
         </div>
       </form>

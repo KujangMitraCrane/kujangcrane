@@ -13,7 +13,7 @@ function App() {
       const contentElement = document.querySelector('#content');
       const scrollPercentage = (window.scrollY / (contentElement.scrollHeight - window.innerHeight)) * 100;
 
-      if (scrollPercentage >= 15) {
+      if (scrollPercentage >= 8) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);

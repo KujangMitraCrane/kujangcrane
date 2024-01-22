@@ -91,6 +91,7 @@
   box-shadow: 0 2.5px 5px rgba(25, 25, 25, 0.12);
   background-color: var(--background-color);
   border-radius: 10px;
+  padding-bottom: 2rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -137,7 +138,6 @@
 .offering .offer-content .content .desc {
   width: 100%;
   padding: 0 15px;
-  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -174,7 +174,31 @@
   font-weight: 500;
 }
 
+.offering .offer-content .content .actions {
+  width: 100%;
+  height: auto;
+  padding: 0 15px;
+}
+
+.offering .offer-content .content .actions .checkout {
+  width: 100%;
+  height: 2rem;
+  background-color: var(--main-secondary-color);
+  color: #fff;
+  border: 2px solid var(--main-secondary-color);
+  transition: background-color, color, 500ms ease-in-out;
+}
+
+.offering .offer-content .content .actions .checkout:hover {
+  background-color: var(--background-color);
+  color: var(--main-secondary-color);
+}
+
 @media screen and (min-width: 640px) {
+  .offering .our-offer .headline {
+    width: 100%;
+  }
+
   .offering .our-offer .headline h1 {
     font-size: 3em;
   }
@@ -187,16 +211,16 @@
     align-items: flex-end;
   }
 
-  .offering .our-offer .headline {
-    width: 50%;
-  }
-
   .offering .offer-content .content {
     flex: 0 0 47%;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .offering .our-offer .headline {
+    width: 70%;
+  }
+
   .offering .offer-content {
     margin-left: 0;
   }

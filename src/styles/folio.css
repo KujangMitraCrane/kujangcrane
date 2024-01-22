@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  background-color: rgb(153, 153, 153, 0.12);
+  padding: 7rem 0;
 }
 
 .folio .our-works {
@@ -68,14 +70,15 @@
 }
 
 .folio .filtering .dropdown .selected-category {
-  width: 12rem;
+  width: 12.5rem;
   height: 3rem;
+  padding: 0 8px;
   border-radius: 8px;
   border: 1px solid var(--text-color);
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 8px;
 }
 
 .folio .filtering .dropdown .selected-category .arrow {
@@ -84,7 +87,7 @@
 }
 
 .folio .filtering .dropdown .dropdown-menu {
-  width: 12rem;
+  width: fit-content;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -93,13 +96,14 @@
 
 .folio .filtering .dropdown .dropdown-menu li {
   width: 100%;
-  padding: 0.5rem 8px;
+  padding: 0.5rem 1rem;
   background-color: transparent;
   color: var(--header-color);
   font-size: 18px;
 }
 
-.folio .filtering .dropdown .dropdown-menu li:hover {
+.folio .filtering .dropdown .dropdown-menu li:hover,
+.folio .filtering .dropdown .dropdown-menu li.active {
   background-color: rgb(255, 94, 0, 0.12);
 }
 
@@ -161,17 +165,23 @@
     font-size: 3em;
   }
 
+  .folio .filtering .dropdown .selected-category {
+    width: 14rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .folio .filtering ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .folio .filtering .dropdown {
     display: none;
   }
-}
 
-@media screen and (min-width: 768px) {
   .folio .folio-content .content {
     flex: 0 1 33%;
   }

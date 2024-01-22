@@ -24,9 +24,9 @@ const Offering = () => {
     <div className="offering" id="offer">
       <div className="our-offer">
         <div className="headline">
-          <h1>What We Offer</h1>
+          <h1>Apa yang Kami Tawarkan?</h1>
           <span />
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo culpa praesentium doloremque sit, quo sequi.</p>
+          <p>Kujang Mitra Crane memiliki berbagai crane yang dapat memenuhi kebutuhan anda. Mulai dari 3 ton - 500 ton</p>
         </div>
         <div className="arrow">
           <button className="nextMove" onClick={previousMove}>

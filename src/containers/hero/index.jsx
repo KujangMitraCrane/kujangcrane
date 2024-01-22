@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react';
+import { Link } from 'react-scroll';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { FaRegArrowAltCircleRight } from 'react-icons/fa';
@@ -55,15 +56,20 @@ const Hero = () => {
             ))}
           </div>
         </div>
-        <p>Rent cranes & other equipment for your construction site</p>
+        <p>
+          Jasa sewa Crane berkualitas full support kepada customer. Menyediakan kebutuhan sewa crane diantaranya,
+          <i style={{ fontWeight: 'bold' }}> Mobile Crane, All Terrain Crane, Roughter Crane, Crawler Crane, Truck Mounted Crane & Forklift.</i> Menggunakan tenaga profesional dan menjamin keselamatan pekerja.
+        </p>
         <div className="actions">
-          <button>Learn More</button>
-          <button>
-            Our Portfolio
+          <Link to="about" smooth={true} duration={1000}>
+            Learn More
+          </Link>
+          <Link to="contact" smooth={true} duration={1000}>
+            Kontak Kami
             <>
               <FaRegArrowAltCircleRight />
             </>
-          </button>
+          </Link>
         </div>
         <div className="dots-selected">
           {scrollSnaps.map((_, index) => (

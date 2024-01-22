@@ -22,9 +22,9 @@ const Folio = () => {
   return (
     <div className="folio" id="folio">
       <div className="our-works">
-        <h1>Recent Works</h1>
+        <h1>Proyek - Proyek Kami</h1>
         <span />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quis repellat, autem quam eius veniam.</p>
+        <p>Beberapa pekerjaan yang sudah dilakukan oleh perusahaan jasa sewa crane kami, Kujang Mitra Crane.</p>
       </div>
       <div className="filtering">
         <Filtered selectedCategory={selectedCategory} handleCategory={handleCategory} />
