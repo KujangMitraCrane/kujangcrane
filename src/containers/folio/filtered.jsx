@@ -14,20 +14,20 @@ const Filtered = (props) => {
         All
       </li>
       <li
-        className={selectedCategory === 'Construction' ? 'active' : ''}
+        className={selectedCategory === 'Construction Support' ? 'active' : ''}
         onClick={() => {
-          handleCategory('Construction');
+          handleCategory('Construction Support');
         }}
       >
-        Construction
+        Construction Support
       </li>
       <li
-        className={selectedCategory === 'Infrastructure' ? 'active' : ''}
+        className={selectedCategory === 'Infrastructure Support' ? 'active' : ''}
         onClick={() => {
-          handleCategory('Infrastructure');
+          handleCategory('Infrastructure Support');
         }}
       >
-        Infrastructures
+        Infrastructures Support
       </li>
       <li
         className={selectedCategory === 'Material Lift' ? 'active' : ''}
@@ -38,28 +38,28 @@ const Filtered = (props) => {
         Material Lift
       </li>
       <li
-        className={selectedCategory === 'Warehouses' ? 'active' : ''}
+        className={selectedCategory === 'Warehouses Support' ? 'active' : ''}
         onClick={() => {
-          handleCategory('Warehouses');
+          handleCategory('Warehouses Support');
         }}
       >
-        Warehouses
+        Warehouses Support
       </li>
       <li
-        className={selectedCategory === 'High Rise Buldings' ? 'active' : ''}
+        className={selectedCategory === 'Buldings Support' ? 'active' : ''}
         onClick={() => {
-          handleCategory('High Rise Buildings');
+          handleCategory('Buildings Support');
         }}
       >
-        High Rise Buildings
+        Buildings Support
       </li>
       <li
-        className={selectedCategory === 'Real Estate' ? 'active' : ''}
+        className={selectedCategory === 'Real Estate Support' ? 'active' : ''}
         onClick={() => {
-          handleCategory('Real Estate');
+          handleCategory('Real Estate Support');
         }}
       >
-        Real Estate
+        Real Estate Support
       </li>
     </ul>
   );

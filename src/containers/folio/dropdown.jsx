@@ -5,7 +5,7 @@ const Dropdown = (props) => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
-  const categories = ['All', 'Construction', 'Infrastructure', 'Material Lift', 'Warehouses', 'High Rise Buildings', 'Real Estate'];
+  const categories = ['All', 'Construction Support', 'Infrastructure Support', 'Material Lift', 'Warehouses Support', 'Buildings Support', 'Real Estate Support'];
 
   return (
     <div className="dropdown">

@@ -5,13 +5,13 @@ const ActiveLink = ({ onClose }) => {
   return (
     <div className="link">
       <ScrollLink to="about" smooth={true} duration={1000} onClick={onClose}>
-        About
+        Tentang Kami
       </ScrollLink>
       <ScrollLink to="services" smooth={true} duration={1000} onClick={onClose}>
-        Services
+        Layanan Kami
       </ScrollLink>
       <ScrollLink to="offer" smooth={true} duration={1000} onClick={onClose}>
-        Offer
+        Alat Sewa
       </ScrollLink>
       <ScrollLink to="folio" smooth={true} duration={1000} onClick={onClose}>
         Folio
@@ -23,7 +23,7 @@ const ActiveLink = ({ onClose }) => {
         Faq
       </ScrollLink>
       <ScrollLink to="contact" smooth={true} duration={1000} onClick={onClose}>
-        Contact
+        Kontak Kami
       </ScrollLink>
     </div>
   );
@@ -33,13 +33,13 @@ const LinkNavbar = ({ onClose }) => {
   return (
     <>
       <ScrollLink to="about" smooth={true} duration={1000} onClick={onClose}>
-        About
+        Tentang Kami
       </ScrollLink>
       <ScrollLink to="services" smooth={true} duration={1000} onClick={onClose}>
-        Services
+        Layanan Kami
       </ScrollLink>
       <ScrollLink to="offer" smooth={true} duration={1000} onClick={onClose}>
-        Offer
+        Alat Sewa
       </ScrollLink>
       <ScrollLink to="folio" smooth={true} duration={1000} onClick={onClose}>
         Folio
@@ -51,7 +51,7 @@ const LinkNavbar = ({ onClose }) => {
         Faq
       </ScrollLink>
       <ScrollLink to="contact" smooth={true} duration={1000} onClick={onClose}>
-        Contact
+        Kontak Kami
       </ScrollLink>
     </>
   );

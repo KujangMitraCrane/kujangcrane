@@ -1,12 +1,11 @@
 import React from 'react';
 
 const OfferContent = (props) => {
-  const { title, specific, price, image } = props;
+  const { title, specific, merk, image } = props;
 
   const handleCheckout = () => {
-    const phoneNumber = '081511020455'; // Ganti dengan nomor telepon tujuan
-    const message = 'Halo, saya tertarik dengan produk Anda.'; // Ganti dengan pesan Anda
-    const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+    const phoneNumber = '081511020455';
+    const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
 
     window.open(whatsappLink, '_blank');
   };
@@ -20,8 +19,8 @@ const OfferContent = (props) => {
         <label>
           <h2>{title}</h2>
         </label>
-        <p className="price">
-          from: <label>Rp. {price}</label>
+        <p className="merk">
+          Merk: <label>{merk}</label>
         </p>
         <p className="specs">
           Ton: <label>{specific}</label>
@@ -29,7 +28,7 @@ const OfferContent = (props) => {
       </div>
       <div className="actions">
         <button className="checkout" type="button" onClick={handleCheckout}>
-          Checkout
+          Sewa
         </button>
       </div>
     </div>

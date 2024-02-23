@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/navbar';
 import Support from './components/support';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import Home from './pages/home';
 import Footer from './components/footer';
 
@@ -33,6 +33,7 @@ function App() {
       <Navbar isScrolled={isScrolled} />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <footer>
         <Footer />

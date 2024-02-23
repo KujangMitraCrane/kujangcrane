@@ -21,14 +21,23 @@
   display: none;
 }
 
+.navbar .hub {
+  position: fixed;
+  bottom: 1.24rem;
+  right: 2rem;
+  display: block;
+  z-index: 10;
+}
+
 .navbar.fixed .toTop {
   position: fixed;
-  bottom: 2rem;
+  bottom: 5.6rem;
   right: 2rem;
   display: block;
 }
 
-.navbar.fixed .toTop a {
+.navbar.fixed .toTop a,
+.navbar .hub .whatsapp {
   width: 3rem;
   height: 3rem;
   text-decoration: none;
@@ -42,12 +51,23 @@
   transition: background-color 300ms ease-in-out;
 }
 
-.navbar.fixed .toTop a svg {
+.navbar .hub .whatsapp {
+  color: #fff;
+  background-color: #4dc247;
+  margin-bottom: 0.75rem;
+}
+
+.navbar.fixed .toTop a svg,
+.navbar .hub .whatsapp svg {
   font-size: 30px;
 }
 
 .navbar.fixed .toTop a:hover {
   background-color: #303030;
+}
+
+.navbar .hub .whatsapp:hover {
+  background-color: #57d850;
 }
 
 .navbar.fixed .toTop span svg {
@@ -56,7 +76,7 @@
 }
 
 .navbar .logo {
-  flex: auto;
+  flex: 1 0 0;
   display: flex;
   justify-content: flex-start;
   font-size: 1.7em;
@@ -182,6 +202,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .navbar .logo {
+    flex: 0 0 0;
+  }
+
   .navbar .activeLink {
     display: none;
   }

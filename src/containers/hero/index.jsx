@@ -1,8 +1,9 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { Link } from 'react-scroll';
+import { Link as WaLink } from 'react-router-dom';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
-import { FaRegArrowAltCircleRight } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
 import { heroImage, heroData } from '../../components/constructionData';
 import DotsSelected from './dotsSelected';
 
@@ -16,6 +17,7 @@ const autoplayTextOptions = {
 };
 
 const Hero = () => {
+  const whatsappLink = `https://wa.me/081511020455`;
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, duration: 50 }, [Autoplay(autoplayImageOptions)]);
   const [emblaTextRef] = useEmblaCarousel({ loop: true, axis: 'y' }, [Autoplay(autoplayTextOptions)]);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -57,19 +59,19 @@ const Hero = () => {
           </div>
         </div>
         <p>
-          Jasa sewa Crane berkualitas full support kepada customer. Menyediakan kebutuhan sewa crane diantaranya,
+          Jasa sewa crane berkualitas full support kepada customer. Menyediakan kebutuhan sewa crane diantaranya,
           <i style={{ fontWeight: 'bold' }}> Mobile Crane, All Terrain Crane, Roughter Crane, Crawler Crane, Truck Mounted Crane & Forklift.</i> Menggunakan tenaga profesional dan menjamin keselamatan pekerja.
         </p>
         <div className="actions">
-          <Link to="about" smooth={true} duration={1000}>
-            Learn More
+          <Link to="offer" smooth={true} duration={1000}>
+            Alat Sewa
           </Link>
-          <Link to="contact" smooth={true} duration={1000}>
+          <WaLink to={whatsappLink} target="_blank">
             Kontak Kami
             <>
-              <FaRegArrowAltCircleRight />
+              <FaWhatsapp />
             </>
-          </Link>
+          </WaLink>
         </div>
         <div className="dots-selected">
           {scrollSnaps.map((_, index) => (

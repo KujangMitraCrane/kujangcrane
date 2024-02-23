@@ -96,34 +96,40 @@
   width: 70%;
   height: 3rem;
   font-size: 16px;
-  background-color: var(--main-secondary-color);
+  text-decoration: none;
+  background-color: rgb(204, 204, 204, 0.35);
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
+  border-bottom: 2px solid #fff;
   border-radius: 5px;
-  color: var(--main-primary-color);
-  transition: color, background-color, 300ms ease-in-out;
+  color: #fff;
+  transition: color, background-color, border, 300ms ease-in-out;
 }
 
 .hero-slider .hero-slider-content .actions a:hover {
+  border: 2px solid #fff;
   background-color: var(--main-primary-color);
-  color: var(--main-secondary-color);
+  color: var(--header-color);
   cursor: default;
 }
 
 .hero-slider .hero-slider-content .actions a:nth-child(2) {
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: #4dc247;
+  border: none;
   padding: 0 10px;
   color: var(--main-primary-color);
-  border-bottom: 2px solid var(--main-primary-color);
+}
+
+.hero-slider .hero-slider-content .actions a:nth-child(2) svg {
+  font-size: 22px;
 }
 
 .hero-slider .hero-slider-content .actions a:nth-child(2):hover {
-  background-color: var(--main-primary-color);
-  color: var(--main-secondary-color);
+  background-color: #57d650;
 }
 
 .hero-slider .hero-slider-content .dots-selected {

@@ -154,7 +154,7 @@
   color: var(--header-color);
 }
 
-.offering .offer-content .content .desc .price,
+.offering .offer-content .content .desc .merk,
 .offering .offer-content .content .desc .specs {
   color: var(--text-color);
   display: flex;
@@ -162,10 +162,9 @@
   gap: 0;
 }
 
-.offering .offer-content .content .desc .price label {
+.offering .offer-content .content .desc .merk label {
   color: var(--main-secondary-color);
-  font-size: 2em;
-  margin: -1px 0 0 -1.5px;
+  margin: 0 0 0 0;
 }
 
 .offering .offer-content .content .desc .specs label {

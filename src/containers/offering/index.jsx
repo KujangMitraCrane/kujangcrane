@@ -40,7 +40,7 @@ const Offering = () => {
       <div className="offer-viewport" ref={emblaRef}>
         <div className="offer-content">
           {offerData.map((offer) => (
-            <OfferContent key={offer.id} title={offer.title} specific={offer.specific} price={offer.price} image={offer.image} />
+            <OfferContent key={offer.id} title={offer.title} specific={offer.specific} merk={offer.merk} image={offer.image} />
           ))}
         </div>
       </div>

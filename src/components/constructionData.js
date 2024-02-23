@@ -1,10 +1,10 @@
 import truckCrane from '../assets/truck-crane.jpg';
 import towerCrane from '../assets/tower-crane.jpg';
-import excavator from '../assets/excavator.jpg';
 import allTerrainCrane from '../assets/all-terrain-crane.jpg';
 import mobileCrane from '../assets/mobile-crane.jpg';
 import roughterCrane from '../assets/roughter-crane.jpg';
 import crawlerCrane from '../assets/crawler-crane.jpg';
+import crawlerCrane1 from '../assets/crawler-crane-1.jpeg';
 import truckMountedCrane from '../assets/truck-mounted-crane.jpg';
 import forklift from '../assets/forklift.jpeg';
 import experiences from '../assets/experiences.jpg';
@@ -18,7 +18,7 @@ import { GrUserWorker } from 'react-icons/gr';
 import { TbCarCrane, TbTools } from 'react-icons/tb';
 import { FaRegCheckCircle } from 'react-icons/fa';
 
-const heroImage = [towerCrane, truckCrane, excavator];
+const heroImage = [towerCrane, truckCrane, crawlerCrane1];
 const heroData = [
   { id: 1, title: 'Mobile Crane' },
   { id: 2, title: 'All Terrain Crane' },
@@ -96,56 +96,56 @@ const offerData = [
   {
     id: 1,
     title: 'Mobile Crane',
-    price: '3,500,000/shift',
+    merk: 'XCMG/Zoomlion/Kato/Tadano/Sany',
     specific: '7/25/55/80/100',
     image: mobileCrane,
   },
   {
     id: 2,
     title: 'All Terrain Crane',
-    price: '85,000,000/3 shift',
+    merk: 'XCMG/Zoomlion/Kato/Tadano/Sany',
     specific: '160/200/300/360/500',
     image: allTerrainCrane,
   },
   {
     id: 3,
     title: 'Roughter Crane',
-    price: '6,500,000/shift',
+    merk: 'XCMG/Zoomlion/Kato/Tadano/Sany',
     image: roughterCrane,
     specific: '25/55/80/100',
   },
   {
     id: 4,
     title: 'Crawler Crane',
-    price: '65,000,000/200 jam',
+    merk: 'XCMG/Zoomlion/Kato/Tadano/Sany',
     specific: '25/55/80/100',
     image: crawlerCrane,
   },
   {
     id: 5,
     title: 'Truck Mounted Crane',
-    price: '3,500,000/shift',
+    merk: 'XCMG/Zoomlion/Kato/Tadano/Sany',
     specific: '3/5/8/10/12',
     image: truckMountedCrane,
   },
   {
     id: 6,
     title: 'Forklift',
-    price: '3,500,000/shift',
-    specific: '3/5/7/10/12',
+    merk: 'XCMG/Zoomlion/Kato/Tadano/Sany',
+    specific: '3/5/7/10/15',
     image: forklift,
   },
 ];
 
 const folioData = [
-  { id: 1, image: construction, category: 'Construction' },
-  { id: 2, image: infrastructure, category: 'Infrastructure' },
+  { id: 1, image: construction, category: 'Construction Support' },
+  { id: 2, image: infrastructure, category: 'Infrastructure Support' },
   { id: 3, image: materialLift, category: 'Material Lift' },
-  { id: 4, image: experiences, category: 'Construction' },
-  { id: 5, image: warehouse, category: 'Warehouses' },
+  { id: 4, image: experiences, category: 'Construction Support' },
+  { id: 5, image: warehouse, category: 'Warehouses Support' },
   { id: 6, image: truckCrane, category: 'Material Lift' },
-  { id: 7, image: towerCrane, category: 'High Rise Buildings' },
-  { id: 8, image: realEstate, category: 'Real Estate' },
+  { id: 7, image: towerCrane, category: 'Buildings Support' },
+  { id: 8, image: realEstate, category: 'Real Estate Support' },
 ];
 const testiData = [
   {
