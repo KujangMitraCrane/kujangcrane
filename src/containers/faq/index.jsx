@@ -32,7 +32,7 @@ const Faq = () => {
   });
 
   return (
-    <div className="faq" id="faq">
+    <div className="faq">
       <div className="why-us">
         <h1>Kenapa Memilih Kami?</h1>
         <span></span>

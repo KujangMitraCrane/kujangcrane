@@ -5,7 +5,7 @@ import { MdNavigateBefore, MdNavigateNext } from 'react-icons/md';
 import { offerData } from '../../components/constructionData';
 import OfferContent from './offerContent';
 
-const Offering = () => {
+const Offering = ({ homePage }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     slidesToScroll: 'auto',
@@ -28,22 +28,39 @@ const Offering = () => {
           <span />
           <p>Kujang Mitra Crane memiliki berbagai crane yang dapat memenuhi kebutuhan anda. Mulai dari 3 ton - 500 ton</p>
         </div>
-        <div className="arrow">
-          <button className="nextMove" onClick={previousMove}>
-            <MdNavigateBefore />
-          </button>
-          <button className="previousMove" onClick={nextMove}>
-            <MdNavigateNext />
-          </button>
-        </div>
+        {!homePage && (
+          <div className="arrow">
+            <button className="nextMove" onClick={previousMove}>
+              <MdNavigateBefore />
+            </button>
+            <button className="previousMove" onClick={nextMove}>
+              <MdNavigateNext />
+            </button>
+          </div>
+        )}
       </div>
-      <div className="offer-viewport" ref={emblaRef}>
-        <div className="offer-content">
+      <div className={!homePage ? 'offer-viewport' : 'offer-viewport-open'} ref={!homePage ? emblaRef : null}>
+        <div className={!homePage ? 'offer-content' : 'offer-content-open'}>
           {offerData.map((offer) => (
             <OfferContent key={offer.id} title={offer.title} specific={offer.specific} merk={offer.merk} image={offer.image} />
           ))}
         </div>
       </div>
+      {/* {!homePage ? (
+        <div className="offer-viewport" ref={emblaRef}>
+          <div className={!homePage ? 'offer-content': 'offer-content-open'}>
+            {offerData.map((offer) => (
+              <OfferContent key={offer.id} title={offer.title} specific={offer.specific} merk={offer.merk} image={offer.image} />
+            ))}
+          </div>
+        </div>
+      ) : (
+        <div className="offer-content-open">
+          {offerData.map((offer) => (
+            <OfferContent key={offer.id} title={offer.title} specific={offer.specific} merk={offer.merk} image={offer.image} />
+          ))}
+        </div>
+      )} */}
     </div>
   );
 };

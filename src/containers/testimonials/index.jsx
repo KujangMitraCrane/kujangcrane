@@ -36,7 +36,7 @@ const Testimonials = () => {
   }, [emblaApi, onInit, onSelect]);
 
   return (
-    <div className="testimonials" id="testimonials" style={{ backgroundImage: `url(${testimonial})` }}>
+    <div className="testimonials" style={{ backgroundImage: `url(${testimonial})` }}>
       <div className="our-testy">
         <div className="heading">
           <h1>Apa Pendapat Mitra Kami?</h1>
