@@ -5,7 +5,7 @@ import ContactForm from './contactForm';
 
 const Contact = () => {
   return (
-    <div className="contact" id="contact">
+    <div className="contact">
       <div className="contact-header">
         <h1>Hubungi Kami</h1>
         <span className="underline" />

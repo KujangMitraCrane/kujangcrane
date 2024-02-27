@@ -4,7 +4,7 @@ import { servicesData } from '../../components/constructionData';
 
 const Services = () => {
   return (
-    <div className="services" id="services">
+    <div className="services">
       <div className="our-services">
         <h1>Layanan Kami</h1>
         <span />
