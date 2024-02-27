@@ -5,7 +5,7 @@ import aboutPict from '../../assets/about.jpg';
 
 const About = () => {
   return (
-    <div className="about" id="about">
+    <div className="about">
       <div className="about-us">
         <h1>Tentang Kami</h1>
         <span />

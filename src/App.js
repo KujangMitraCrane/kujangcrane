@@ -2,8 +2,15 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './components/navbar';
 import Support from './components/support';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import Home from './pages/home';
 import Footer from './components/footer';
+import HomePage from './pages/homePage';
+import AboutPage from './pages/aboutPage';
+import ServicesPage from './pages/servicesPage';
+import OfferPage from './pages/offerPage';
+import FolioPage from './pages/folioPage';
+import TestiPage from './pages/testiPage';
+import FaqPage from './pages/FaqPage';
+import ContactPage from './pages/contactPage';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,7 +39,14 @@ function App() {
       <Support />
       <Navbar isScrolled={isScrolled} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/offer" element={<OfferPage />} />
+        <Route path="/folio" element={<FolioPage />} />
+        <Route path="/testimonials" element={<TestiPage />} />
+        <Route path="/faq" element={<FaqPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <footer>

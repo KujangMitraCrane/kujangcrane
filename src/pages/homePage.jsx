@@ -11,7 +11,7 @@ import Faq from '../containers/faq';
 import Cooperation from '../containers/cooperation';
 import Contact from '../containers/contact';
 
-const Home = () => {
+const HomePage = () => {
   const contentRef = useRef(null);
 
   return (
@@ -30,4 +30,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

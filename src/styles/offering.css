@@ -74,6 +74,9 @@
 .offering .offer-viewport {
   overflow-x: hidden;
 }
+.offering .offer-viewport-open {
+  overflow-x: visible;
+}
 
 .offering .offer-content {
   width: 100%;
@@ -85,7 +88,17 @@
   padding-bottom: 3rem;
 }
 
+.offering .offer-content-open {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-left: -2rem;
+}
+
 .offering .offer-content .content {
+  width: auto;
   flex: 0 0 100%;
   margin-left: 2rem;
   box-shadow: 0 2.5px 5px rgba(25, 25, 25, 0.12);
@@ -99,7 +112,22 @@
   position: relative;
 }
 
-.offering .offer-content .content::before {
+.offering .offer-content-open .content {
+  width: 100%;
+  margin-left: 2rem;
+  box-shadow: 0 2.5px 5px rgba(25, 25, 25, 0.12);
+  background-color: var(--background-color);
+  border-radius: 10px;
+  padding-bottom: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
+.offering .offer-content .content::before,
+.offering .offer-content-open .content::before {
   content: '';
   width: 0;
   height: 6px;
@@ -111,18 +139,21 @@
   transition: width 300ms ease-in-out;
 }
 
-.offering .offer-content .content:hover::before {
+.offering .offer-content .content:hover::before,
+.offering .offer-content-open .content:hover::before {
   width: 100%;
 }
 
-.offering .offer-content .content .image {
+.offering .offer-content .content .image,
+.offering .offer-content-open .content .image {
   width: 100%;
   height: 15rem;
   overflow: hidden;
   border-radius: 10px 10px 0 0;
 }
 
-.offering .offer-content .content .image img {
+.offering .offer-content .content .image img,
+.offering .offer-content-open .content .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -131,11 +162,13 @@
   transition: transform 500ms ease-in-out;
 }
 
-.offering .offer-content .content .image img:hover {
+.offering .offer-content .content .image img:hover,
+.offering .offer-content-open .content .image img:hover {
   transform: scale(1.2);
 }
 
-.offering .offer-content .content .desc {
+.offering .offer-content .content .desc,
+.offering .offer-content-open .content .desc {
   width: 100%;
   padding: 0 15px;
   display: flex;
@@ -143,43 +176,51 @@
   gap: 0.5rem;
 }
 
-.offering .offer-content .content .desc label {
+.offering .offer-content .content .desc label,
+.offering .offer-content-open .content .desc label {
   display: flex;
   flex-direction: column;
   gap: 0;
   color: var(--text-color);
 }
 
-.offering .offer-content .content .desc label h2 {
+.offering .offer-content .content .desc label h2,
+.offering .offer-content-open .content .desc label h2 {
   color: var(--header-color);
 }
 
 .offering .offer-content .content .desc .merk,
-.offering .offer-content .content .desc .specs {
+.offering .offer-content .content .desc .specs,
+.offering .offer-content-open .content .desc .merk,
+.offering .offer-content-open .content .desc .specs {
   color: var(--text-color);
   display: flex;
   flex-direction: column;
   gap: 0;
 }
 
-.offering .offer-content .content .desc .merk label {
+.offering .offer-content .content .desc .merk label,
+.offering .offer-content-open .content .desc .merk label {
   color: var(--main-secondary-color);
   margin: 0 0 0 0;
 }
 
-.offering .offer-content .content .desc .specs label {
+.offering .offer-content .content .desc .specs label,
+.offering .offer-content-open .content .desc .specs label {
   color: var(--header-color);
   font-size: 18px;
   font-weight: 500;
 }
 
-.offering .offer-content .content .actions {
+.offering .offer-content .content .actions,
+.offering .offer-content-open .content .actions {
   width: 100%;
   height: auto;
   padding: 0 15px;
 }
 
-.offering .offer-content .content .actions .checkout {
+.offering .offer-content .content .actions .checkout,
+.offering .offer-content-open .content .actions .checkout {
   width: 100%;
   height: 2rem;
   background-color: var(--main-secondary-color);
@@ -188,7 +229,8 @@
   transition: background-color, color, 500ms ease-in-out;
 }
 
-.offering .offer-content .content .actions .checkout:hover {
+.offering .offer-content .content .actions .checkout:hover,
+.offering .offer-content-open .content .actions .checkout:hover {
   background-color: var(--background-color);
   color: var(--main-secondary-color);
 }
@@ -213,6 +255,10 @@
   .offering .offer-content .content {
     flex: 0 0 47%;
   }
+
+  .offering .offer-content-open {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -224,13 +270,14 @@
     margin-left: 0;
   }
 
-  .offering .offer-content .content {
+  .offering .offer-content .content,
+  .offering .offer-content-open .content {
     flex: 0 0 30.6%;
   }
 }
 
 @media screen and (min-width: 1320px) {
-  .offering .offer-content .content {
-    flex: 0 0 31.27%;
+  .offering .offer-content-open {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

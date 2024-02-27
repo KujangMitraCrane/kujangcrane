@@ -83,6 +83,10 @@
   color: var(--header-color);
 }
 
+.navbar .logo h1 {
+  cursor: pointer;
+}
+
 .navbar .navlink,
 .navbar .search {
   display: none;
