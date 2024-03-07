@@ -46,6 +46,21 @@ const Offering = ({ homePage }) => {
           ))}
         </div>
       </div>
+      {/* {!homePage ? (
+        <div className="offer-viewport" ref={emblaRef}>
+          <div className={!homePage ? 'offer-content': 'offer-content-open'}>
+            {offerData.map((offer) => (
+              <OfferContent key={offer.id} title={offer.title} specific={offer.specific} merk={offer.merk} image={offer.image} />
+            ))}
+          </div>
+        </div>
+      ) : (
+        <div className="offer-content-open">
+          {offerData.map((offer) => (
+            <OfferContent key={offer.id} title={offer.title} specific={offer.specific} merk={offer.merk} image={offer.image} />
+          ))}
+        </div>
+      )} */}
     </div>
   );
 };

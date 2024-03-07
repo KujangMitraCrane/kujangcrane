@@ -9,7 +9,11 @@ import ServicesPage from './pages/servicesPage';
 import OfferPage from './pages/offerPage';
 import FolioPage from './pages/folioPage';
 import TestiPage from './pages/testiPage';
+<<<<<<< HEAD
 import FaqPage from './pages/Faqpage';
+=======
+import FaqPage from './pages/FaqPage';
+>>>>>>> d22b71527e5662479a5df6a48fbe0bffe89273d5
 import ContactPage from './pages/contactPage';
 
 function App() {

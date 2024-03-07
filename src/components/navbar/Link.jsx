@@ -4,27 +4,27 @@ import { Link } from 'react-router-dom';
 const ActiveLink = ({ onClose }) => {
   return (
     <div className="link">
-      <Link to="/about" onClick={onClose}>
+      <ScrollLink to="about" smooth={true} duration={1000} onClick={onClose}>
         Tentang Kami
-      </Link>
-      <Link to="/services" onClick={onClose}>
+      </ScrollLink>
+      <ScrollLink to="services" smooth={true} duration={1000} onClick={onClose}>
         Layanan Kami
-      </Link>
-      <Link to="/offer" onClick={onClose}>
+      </ScrollLink>
+      <ScrollLink to="offer" smooth={true} duration={1000} onClick={onClose}>
         Alat Sewa
-      </Link>
-      <Link to="/folio" onClick={onClose}>
+      </ScrollLink>
+      <ScrollLink to="folio" smooth={true} duration={1000} onClick={onClose}>
         Folio
-      </Link>
-      <Link to="/testimonials" onClick={onClose}>
+      </ScrollLink>
+      <ScrollLink to="testimonials" smooth={true} duration={1000} onClick={onClose}>
         Testimonials
-      </Link>
-      <Link to="/faq" onClick={onClose}>
+      </ScrollLink>
+      <ScrollLink to="faq" smooth={true} duration={1000} onClick={onClose}>
         Faq
-      </Link>
-      <Link to="/contact" onClick={onClose}>
+      </ScrollLink>
+      <ScrollLink to="contact" smooth={true} duration={1000} onClick={onClose}>
         Kontak Kami
-      </Link>
+      </ScrollLink>
     </div>
   );
 };
