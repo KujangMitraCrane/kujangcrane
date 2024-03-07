@@ -81,6 +81,7 @@
   justify-content: flex-start;
   font-size: 1.7em;
   color: var(--header-color);
+  cursor: pointer;
 }
 
 .navbar .navlink,
@@ -114,7 +115,7 @@
   width: 100%;
   padding: 1rem 0;
   text-align: center;
-  color: var(--text-color);
+  color: #505050;
   font-weight: 500;
   border: none;
   text-decoration: none;
@@ -221,7 +222,7 @@
   .navbar .navlink a {
     width: fit-content;
     text-align: center;
-    color: var(--text-color);
+    color: #505050;
     font-weight: 500;
     border: none;
     text-decoration: none;

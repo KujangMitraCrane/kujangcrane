@@ -20,7 +20,7 @@ const Folio = () => {
   const filteredCategory = selectedCategory === 'All' ? folioData : folioData.filter((folio) => folio.category === selectedCategory);
 
   return (
-    <div className="folio" id="folio">
+    <div className="folio">
       <div className="our-works">
         <h1>Proyek - Proyek Kami</h1>
         <span />
