@@ -7,15 +7,15 @@ const Experiences = () => {
     <div className="experiences" style={{ backgroundImage: `url(${experience})` }}>
       <div className="layer">
         <div className="projects">
-          <h3>300+</h3>
+          <label>300+</label>
           <span>Total Proyek</span>
         </div>
         <div className="clients">
-          <h3>500</h3>
+          <label>500</label>
           <span>Klien</span>
         </div>
         <div className="total-rents">
-          <h3>800+</h3>
+          <label>800+</label>
           <span>Total Sewa</span>
         </div>
       </div>

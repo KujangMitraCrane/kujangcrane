@@ -30,10 +30,10 @@ const Offering = ({ homePage }) => {
         </div>
         {!homePage && (
           <div className="arrow">
-            <button className="nextMove" name="next" onClick={previousMove}>
+            <button className="nextMove" aria-label="next" onClick={previousMove}>
               <MdNavigateBefore />
             </button>
-            <button className="previousMove" name="previous" onClick={nextMove}>
+            <button className="previousMove" aria-label="previous" onClick={nextMove}>
               <MdNavigateNext />
             </button>
           </div>
