@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import { Link } from 'react-scroll';
-import { Link as WaLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { FaWhatsapp } from 'react-icons/fa';
@@ -63,15 +62,13 @@ const Hero = () => {
           <i style={{ fontWeight: 'bold' }}> Mobile Crane, All Terrain Crane, Roughter Crane, Crawler Crane, Truck Mounted Crane & Forklift.</i> Menggunakan tenaga profesional dan menjamin keselamatan pekerja.
         </p>
         <div className="actions">
-          <Link to="offer" smooth={true} duration={1000}>
-            Alat Sewa
-          </Link>
-          <WaLink to={whatsappLink} target="_blank">
+          <Link to="/offer">Alat Sewa</Link>
+          <Link to={whatsappLink} target="_blank">
             Kontak Kami
-            <>
+            <l>
               <FaWhatsapp />
-            </>
-          </WaLink>
+            </l>
+          </Link>
         </div>
         <div className="dots-selected">
           {scrollSnaps.map((_, index) => (
