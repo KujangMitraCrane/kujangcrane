@@ -80,8 +80,10 @@
   gap: 0.5rem;
 }
 
-.about .about-content .content .data .data-desc h3 {
+.about .about-content .content .data .data-desc label {
+  font-size: 1.3em;
   color: var(--header-color);
+  font-weight: 500;
   text-transform: uppercase;
 }
 

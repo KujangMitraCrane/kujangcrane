@@ -23,7 +23,7 @@ const About = () => {
             <div className="data" key={data.id}>
               <span>{data.icon}</span>
               <div className="data-desc">
-                <h3>{data.label}</h3>
+                <label>{data.label}</label>
                 <p>{data.desc}</p>
               </div>
             </div>
