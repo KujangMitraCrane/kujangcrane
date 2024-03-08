@@ -36,7 +36,7 @@ const Navbar = ({ isScrolled }) => {
         <MdSearch />
       </div>
       <div className="hub">
-        <WaLink className="whatsapp" to={whatsappLink} target="_blank">
+        <WaLink className="whatsapp" to={whatsappLink} title="whatsapp" target="_blank">
           <MdWhatsapp />
         </WaLink>
       </div>

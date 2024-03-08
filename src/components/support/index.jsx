@@ -5,10 +5,7 @@ import { MdMail, MdPhone, MdOutlineWatchLater } from 'react-icons/md';
 
 const Support = () => {
   const handleCheckout = () => {
-    // Construct the WhatsApp link with the provided number
     const whatsappLink = `https://wa.me/081511020455`;
-
-    // Open the WhatsApp link in a new window or tab
     window.open(whatsappLink, '_blank');
   };
 

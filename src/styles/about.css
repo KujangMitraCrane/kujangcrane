@@ -77,11 +77,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .about .about-content .content .data .data-desc h3 {
-  font-size: 1.5em;
   color: var(--header-color);
   text-transform: uppercase;
 }
