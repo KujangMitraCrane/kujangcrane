@@ -8,18 +8,18 @@ const FooterAbout = () => {
       <span className="underline" />
       <p>Kujang Mitra Crane adalah perusahaan jasa sewa crane berkualitas & terpercaya di Jawa Barat yang berlokasi di Bogor. Sudah beroperasi selama 5 tahun.</p>
       <span className="media">
-        <i>
+        <span>
           <FaXTwitter />
-        </i>
-        <i>
+        </span>
+        <span>
           <FaFacebook />
-        </i>
-        <i>
+        </span>
+        <span>
           <FaLinkedin />
-        </i>
-        <i>
+        </span>
+        <span>
           <FaInstagram />
-        </i>
+        </span>
       </span>
     </>
   );

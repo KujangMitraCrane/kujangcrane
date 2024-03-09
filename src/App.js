@@ -57,10 +57,10 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
+        <footer>
+          <Footer />
+        </footer>
       </Suspense>
-      <footer>
-        <Footer />
-      </footer>
     </section>
   );
 }
