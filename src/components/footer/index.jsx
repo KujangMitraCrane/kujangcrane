@@ -26,7 +26,7 @@ const Footer = () => {
       </div>
       <div className="copyright">
         <div className="license">
-          <FaRegCopyright /> Copyright 2024 kujangmitracrane.com
+          <FaRegCopyright /> Copyright 2024 kujangmitracrane.site
         </div>
         <div className="privacy">
           <Link to={DISCLAIMER} target="_blank">

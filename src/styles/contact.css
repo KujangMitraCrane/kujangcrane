@@ -53,9 +53,23 @@
   color: var(--header-color);
 }
 
-.contact .contact-info .phone label,
+.contact .contact-info .phone .phone-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .contact-info .phone .phone-contact label,
 .contact .contact-info .email label {
   font-weight: 500;
+}
+
+.contact .contact-info .phone .phone-contact a {
+  text-decoration: none;
+  color: var(--header-color);
+}
+
+.contact .contact-info .phone .phone-contact a:hover {
+  color: var(--main-secondary-color);
 }
 
 .contact .contact-info .phone .icon,

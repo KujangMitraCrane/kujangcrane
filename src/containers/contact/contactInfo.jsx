@@ -1,16 +1,21 @@
 import React from 'react';
 import { IoLogoWhatsapp, IoLocation, IoMailOpen } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
 
 const ContactInfo = () => {
+  const whatsappLink = `https://wa.me/081511020455`;
+
   return (
     <>
       <span className="phone">
         <i className="icon">
           <IoLogoWhatsapp />
         </i>
-        <div>
+        <div className="phone-contact">
           <label>Phone:</label>
-          <p>+62 81511020455</p>
+          <Link to={whatsappLink} aria-label="whatsapp" target="_blank">
+            +62 81511020455
+          </Link>
         </div>
       </span>
       <span className="location">

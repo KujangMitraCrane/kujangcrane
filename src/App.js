@@ -1,16 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Support from './components/support';
-import { Route, Routes, Navigate } from 'react-router-dom';
 import Footer from './components/footer';
-import HomePage from './pages/homePage';
-import AboutPage from './pages/aboutPage';
-import ServicesPage from './pages/servicesPage';
-import OfferPage from './pages/offerPage';
-import FolioPage from './pages/folioPage';
-import TestiPage from './pages/testiPage';
-import FaqPage from './pages/FaqPage';
-import ContactPage from './pages/contactPage';
+import LoadingSpinner from './UI/loadingSpinner';
+const HomePage = lazy(() => import('./pages/homePage'));
+const AboutPage = lazy(() => import('./pages/aboutPage'));
+const ServicesPage = lazy(() => import('./pages/servicesPage'));
+const OfferPage = lazy(() => import('./pages/offerPage'));
+const FolioPage = lazy(() => import('./pages/folioPage'));
+const TestiPage = lazy(() => import('./pages/testiPage'));
+const FaqPage = lazy(() => import('./pages/FaqPage'));
+const ContactPage = lazy(() => import('./pages/contactPage'));
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,17 +39,25 @@ function App() {
     <section>
       <Support />
       <Navbar isScrolled={isScrolled} />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/services" element={<ServicesPage />} />
-        <Route path="/offer" element={<OfferPage />} />
-        <Route path="/folio" element={<FolioPage />} />
-        <Route path="/testimonials" element={<TestiPage />} />
-        <Route path="/faq" element={<FaqPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
+      <Suspense
+        fallback={
+          <div className="center">
+            <LoadingSpinner />
+          </div>
+        }
+      >
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/offer" element={<OfferPage />} />
+          <Route path="/folio" element={<FolioPage />} />
+          <Route path="/testimonials" element={<TestiPage />} />
+          <Route path="/faq" element={<FaqPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </Suspense>
       <footer>
         <Footer />
       </footer>

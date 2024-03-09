@@ -20,6 +20,15 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
+.center {
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
 button {
   padding: 0 1rem;
   height: 2rem;

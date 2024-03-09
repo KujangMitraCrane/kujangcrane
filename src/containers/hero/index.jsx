@@ -65,9 +65,7 @@ const Hero = () => {
           <Link to="/offer">Alat Sewa</Link>
           <Link to={whatsappLink} target="_blank">
             Kontak Kami
-            <l>
-              <FaWhatsapp />
-            </l>
+            <FaWhatsapp />
           </Link>
         </div>
         <div className="dots-selected">

@@ -33,7 +33,7 @@
   position: fixed;
   bottom: 5.6rem;
   right: 2rem;
-  display: block;
+  display: hidden;
 }
 
 .navbar.fixed .toTop a,
@@ -203,6 +203,10 @@
   .navbar .search {
     width: 80%;
     left: auto;
+  }
+
+  .navbar.fixed .toTop {
+    display: block;
   }
 }
 
