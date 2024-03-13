@@ -28,7 +28,7 @@ const ContactInfo = () => {
         <i className="icon">
           <IoMailOpen />
         </i>
-        <div>
+        <div className="email-contact">
           <label>E-mail:</label>
           <p>kujangmitracrane@gmail.com</p>
         </div>

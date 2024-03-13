@@ -48,13 +48,13 @@ function App() {
       >
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/offer" element={<OfferPage />} />
+          <Route path="/tentang-kami" element={<AboutPage />} />
+          <Route path="/layanan" element={<ServicesPage />} />
+          <Route path="/alat-kami" element={<OfferPage />} />
           <Route path="/folio" element={<FolioPage />} />
-          <Route path="/testimonials" element={<TestiPage />} />
+          <Route path="/testimoni" element={<TestiPage />} />
           <Route path="/faq" element={<FaqPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/kontak" element={<ContactPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <footer>

@@ -4,25 +4,25 @@ import { Link } from 'react-router-dom';
 const ActiveLink = ({ onClose }) => {
   return (
     <div className="link">
-      <Link to="about" smooth={true} duration={1000} onClick={onClose}>
+      <Link to="/tentang-kami" onClick={onClose}>
         Tentang Kami
       </Link>
-      <Link to="services" smooth={true} duration={1000} onClick={onClose}>
+      <Link to="/layanan" onClick={onClose}>
         Layanan Kami
       </Link>
-      <Link to="offer" smooth={true} duration={1000} onClick={onClose}>
+      <Link to="/alat-sewa" onClick={onClose}>
         Alat Sewa
       </Link>
-      <Link to="folio" smooth={true} duration={1000} onClick={onClose}>
+      <Link to="/folio" onClick={onClose}>
         Folio
       </Link>
-      <Link to="testimonials" smooth={true} duration={1000} onClick={onClose}>
+      <Link to="testimoni" onClick={onClose}>
         Testimonials
       </Link>
-      <Link to="faq" smooth={true} duration={1000} onClick={onClose}>
+      <Link to="faq" onClick={onClose}>
         Faq
       </Link>
-      <Link to="contact" smooth={true} duration={1000} onClick={onClose}>
+      <Link to="kontak" onClick={onClose}>
         Kontak Kami
       </Link>
     </div>
@@ -32,13 +32,13 @@ const ActiveLink = ({ onClose }) => {
 const LinkNavbar = () => {
   return (
     <>
-      <Link to="/about">Tentang Kami</Link>
-      <Link to="/services">Layanan Kami</Link>
-      <Link to="/offer">Alat Sewa</Link>
+      <Link to="/tentang-kami">Tentang Kami</Link>
+      <Link to="/layanan">Layanan Kami</Link>
+      <Link to="/alat-sewa">Alat Sewa</Link>
       <Link to="/folio">Folio</Link>
-      <Link to="/testimonials">Testimonials</Link>
+      <Link to="/testimoni">Testimonials</Link>
       <Link to="/faq">Faq</Link>
-      <Link to="/contact">Kontak Kami</Link>
+      <Link to="/kontak">Kontak Kami</Link>
     </>
   );
 };

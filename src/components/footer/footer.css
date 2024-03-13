@@ -18,6 +18,7 @@
 .footer .further-info .footer-services {
   flex: 0 0 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 1rem;
 }
@@ -38,7 +39,7 @@
 
 .footer .further-info .footer-about p {
   color: #252525;
-  width: 20rem;
+  width: auto;
 }
 
 .footer .further-info .footer-about .media {

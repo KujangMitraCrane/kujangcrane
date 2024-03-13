@@ -48,12 +48,14 @@
 .contact .contact-info .email {
   width: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 0.75rem;
   color: var(--header-color);
 }
 
-.contact .contact-info .phone .phone-contact {
+.contact .contact-info .phone .phone-contact,
+.contact .contact-info .email .email-contact {
   display: flex;
   flex-direction: column;
 }
@@ -162,6 +164,15 @@ form .actions .submit {
 form .actions .submit:hover {
   background-color: var(--background-color);
   color: var(--main-secondary-color);
+}
+
+@media screen and (min-width: 480px) {
+  .contact .contact-info .phone,
+  .contact .contact-info .location,
+  .contact .contact-info .email {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 640px) {
