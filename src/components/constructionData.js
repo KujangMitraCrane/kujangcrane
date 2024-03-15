@@ -2,9 +2,12 @@ import truckCrane from '../assets/truck-crane.jpg';
 import towerCrane from '../assets/tower-crane.jpg';
 import allTerrainCrane from '../assets/all-terrain-crane.jpg';
 import mobileCrane from '../assets/mobile-crane.jpg';
+import mobileCrane2 from '../assets/mobile-crane1.jpeg';
 import roughterCrane from '../assets/roughter-crane.jpg';
+import roughterCrane1 from '../assets/roughter-crane1.jpeg';
 import crawlerCrane from '../assets/crawler-crane.jpg';
 import crawlerCrane1 from '../assets/crawler-crane-1.jpeg';
+import crawlerCrane2 from '../assets/crawler-crane2.jpeg';
 import truckMountedCrane from '../assets/truck-mounted-crane.jpg';
 import forklift from '../assets/forklift.jpeg';
 import experiences from '../assets/experiences.jpg';
@@ -18,7 +21,8 @@ import { GrUserWorker } from 'react-icons/gr';
 import { TbCarCrane, TbTools } from 'react-icons/tb';
 import { FaRegCheckCircle } from 'react-icons/fa';
 
-const heroImage = [towerCrane, truckCrane, crawlerCrane1];
+const heroDesktopImages = [towerCrane, truckCrane, crawlerCrane1];
+const heroMobileImages = [mobileCrane2, roughterCrane1, crawlerCrane2];
 const heroData = [
   { id: 1, title: 'Mobile Crane' },
   { id: 2, title: 'All Terrain Crane' },
@@ -203,4 +207,4 @@ const faqData = [
   },
 ];
 
-export { heroImage, heroData, aboutData, servicesData, offerData, folioData, testiData, faqData };
+export { heroMobileImages, heroDesktopImages, heroData, aboutData, servicesData, offerData, folioData, testiData, faqData };

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { FaWhatsapp } from 'react-icons/fa';
-import { heroImage, heroData } from '../../components/constructionData';
+import { heroDesktopImages, heroMobileImages, heroData } from '../../components/constructionData';
 import DotsSelected from './dotsSelected';
 
 const autoplayImageOptions = {
@@ -21,6 +21,7 @@ const Hero = () => {
   const [emblaTextRef] = useEmblaCarousel({ loop: true, axis: 'y' }, [Autoplay(autoplayTextOptions)]);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState([]);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const scrollTo = useCallback((index) => emblaApi && emblaApi.scrollTo(index), [emblaApi]);
 
@@ -33,6 +34,18 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
     if (!emblaApi) return;
 
     onInit(emblaApi);
@@ -41,6 +54,16 @@ const Hero = () => {
     emblaApi.on('reInit', onSelect);
     emblaApi.on('select', onSelect);
   }, [emblaApi, onInit, onSelect]);
+
+  const getHeroImages = () => {
+    if (screenWidth < 480) {
+      return heroMobileImages; // Your mobile images
+    } else {
+      return heroDesktopImages; // Your desktop images
+    }
+  };
+
+  const heroImage = getHeroImages();
 
   return (
     <div className="hero-slider" ref={emblaRef}>
