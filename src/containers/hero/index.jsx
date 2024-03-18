@@ -57,9 +57,9 @@ const Hero = () => {
 
   const getHeroImages = () => {
     if (screenWidth < 480) {
-      return heroMobileImages; // Your mobile images
+      return heroMobileImages;
     } else {
-      return heroDesktopImages; // Your desktop images
+      return heroDesktopImages;
     }
   };
 
@@ -81,11 +81,11 @@ const Hero = () => {
           </div>
         </div>
         <p>
-          Jasa sewa crane berkualitas full support kepada customer. Menyediakan kebutuhan sewa crane diantaranya,
-          <i style={{ fontWeight: 'bold' }}> Mobile Crane, All Terrain Crane, Roughter Crane, Crawler Crane, Truck Mounted Crane & Forklift.</i> Menggunakan tenaga profesional dan menjamin keselamatan pekerja.
+          Jasa sewa crane terpercaya, murah & berkualitas, siap full support kepada customer. Menyediakan kebutuhan sewa crane diantaranya,
+          <i style={{ fontWeight: 'bold' }}> Mobile Crane, All Terrain Crane, Roughter Crane, Crawler Crane, Truck Mounted Crane & Forklift.</i> Menggunakan tenaga kerja bersertifikat dan alat yang berkualitas, menjamin keselamatan kerja.
         </p>
         <div className="actions">
-          <Link to="/offer">Alat Sewa</Link>
+          <Link to="/alat-sewa">Alat Sewa</Link>
           <Link to={whatsappLink} target="_blank">
             Kontak Kami
             <FaWhatsapp />
