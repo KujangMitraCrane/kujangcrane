@@ -79,7 +79,6 @@
   flex: 1 0 0;
   display: flex;
   justify-content: flex-start;
-  font-size: 1.7em;
   color: var(--header-color);
   cursor: pointer;
 }
