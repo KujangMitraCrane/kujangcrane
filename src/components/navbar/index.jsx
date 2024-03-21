@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate, Link as WaLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import './navbar.css';
-import { useNavigate } from 'react-router-dom';
 import { MdSearch, MdMenu, MdOutlineKeyboardDoubleArrowUp, MdWhatsapp } from 'react-icons/md';
 import { ActiveLink, LinkNavbar } from './Link';
 import Search from './search';
-import { Link } from 'react-scroll';
-import { Link as WaLink } from 'react-router-dom';
+import logo from '../../assets/kmc.png';
 
 const Navbar = ({ isScrolled }) => {
   const whatsappLink = `https://wa.me/081511020455`;
@@ -18,7 +18,7 @@ const Navbar = ({ isScrolled }) => {
   return (
     <div className={`navbar ${isScrolled ? 'fixed' : ''}`}>
       <div className="logo">
-        <h1 onClick={() => navigate('/')}>KMC</h1>
+        <img src={logo} alt="kujang-mitra-crane" onClick={() => navigate('/')} />
       </div>
       <nav className="navlink">
         <LinkNavbar onClose={() => setIsNavbar(false)} />

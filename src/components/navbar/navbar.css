@@ -83,7 +83,9 @@
   cursor: pointer;
 }
 
-.navbar .logo h1 {
+.navbar .logo img {
+  width: 3.5rem;
+  height: 3.5rem;
   cursor: pointer;
 }
 
