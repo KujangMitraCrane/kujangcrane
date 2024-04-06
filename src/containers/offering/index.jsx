@@ -24,7 +24,7 @@ const Offering = ({ homePage }) => {
     <div className="offering">
       <div className="our-offer">
         <div className="headline">
-          <h1>Apa yang Kami Tawarkan?</h1>
+          <label>Apa yang Kami Tawarkan?</label>
           <span />
           <p>Kujang Mitra Crane memiliki berbagai crane yang dapat memenuhi kebutuhan anda. Mulai dari 3 ton - 500 ton</p>
         </div>
@@ -46,21 +46,6 @@ const Offering = ({ homePage }) => {
           ))}
         </div>
       </div>
-      {/* {!homePage ? (
-        <div className="offer-viewport" ref={emblaRef}>
-          <div className={!homePage ? 'offer-content': 'offer-content-open'}>
-            {offerData.map((offer) => (
-              <OfferContent key={offer.id} title={offer.title} specific={offer.specific} merk={offer.merk} image={offer.image} />
-            ))}
-          </div>
-        </div>
-      ) : (
-        <div className="offer-content-open">
-          {offerData.map((offer) => (
-            <OfferContent key={offer.id} title={offer.title} specific={offer.specific} merk={offer.merk} image={offer.image} />
-          ))}
-        </div>
-      )} */}
     </div>
   );
 };

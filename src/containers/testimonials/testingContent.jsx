@@ -9,7 +9,7 @@ const TestingContent = (props) => {
       <span className="icon">
         <BsChatQuote />
       </span>
-      <h2>{text}</h2>
+      <p>{text}</p>
       <span className="underline"></span>
       <div className="clients">
         <p className="name">{name}</p>

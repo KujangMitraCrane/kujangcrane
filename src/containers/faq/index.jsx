@@ -34,7 +34,7 @@ const Faq = () => {
   return (
     <div className="faq">
       <div className="why-us">
-        <h1>Kenapa Memilih Kami?</h1>
+        <label>Kenapa Memilih Kami?</label>
         <span></span>
         <div className="rendered">{renderedFaq}</div>
       </div>

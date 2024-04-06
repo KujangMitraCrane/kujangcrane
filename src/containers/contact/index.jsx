@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="contact-header">
-        <h1>Hubungi Kami</h1>
+        <label>Hubungi Kami</label>
         <span className="underline" />
         <p>Kami Kujang Mitra Crane perusahaan jasa sewa crane di Indonesia. Siap melayani anda kapanpun. Bisa bertanya segala persoalan apapun. Kami akan support kebutuhan anda.</p>
       </div>

@@ -28,8 +28,10 @@
   gap: 1rem;
 }
 
-.offering .our-offer .headline h1 {
+.offering .our-offer .headline label {
   line-height: 0.9em;
+  font-size: 2em;
+  font-weight: 600;
   color: var(--header-color);
 }
 
@@ -183,9 +185,11 @@
   color: var(--text-color);
 }
 
-.offering .offer-content .content .desc label h2,
-.offering .offer-content-open .content .desc label h2 {
+.offering .offer-content .content .desc label .title,
+.offering .offer-content-open .content .desc label .title {
   color: var(--header-color);
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
 .offering .offer-content .content .desc .merk,
@@ -239,9 +243,9 @@
     width: 100%;
   }
 
-  /* .offering .our-offer .headline h1 {
+  .offering .our-offer .headline label {
     font-size: 3em;
-  } */
+  }
 }
 
 @media screen and (min-width: 768px) {

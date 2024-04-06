@@ -24,9 +24,11 @@
   text-align: center;
 }
 
-.testimonials .our-testy .heading h1 {
+.testimonials .our-testy .heading label {
   color: var(--background-color);
   line-height: normal;
+  font-size: 2em;
+  font-weight: 600;
 }
 
 .testimonials .our-testy .heading-viewport {
@@ -64,10 +66,11 @@
   font-size: 2.5rem;
 }
 
-.testimonials .our-testy .heading-viewport .heading-content .content h2 {
+.testimonials .our-testy .heading-viewport .heading-content .content p {
   color: var(--background-color);
   text-align: center;
   line-height: normal;
+  font-size: 1.5em;
 }
 
 .testimonials .our-testy .heading-viewport .heading-content .content .underline {
@@ -128,7 +131,7 @@
 }
 
 @media screen and (min-width: 640px) {
-  /* .testimonials .our-testy .heading h1 {
+  .testimonials .our-testy .heading label {
     font-size: 3em;
-  } */
+  }
 }

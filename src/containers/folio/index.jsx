@@ -22,7 +22,7 @@ const Folio = () => {
   return (
     <div className="folio">
       <div className="our-works">
-        <h1>Proyek - Proyek Kami</h1>
+        <label>Proyek - Proyek Kami</label>
         <span />
         <p>Beberapa pekerjaan yang sudah dilakukan oleh perusahaan jasa sewa crane kami, Kujang Mitra Crane.</p>
       </div>

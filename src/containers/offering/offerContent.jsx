@@ -17,7 +17,7 @@ const OfferContent = (props) => {
       </div>
       <div className="desc">
         <label>
-          <h2>{title}</h2>
+          <div className="title">{title}</div>
         </label>
         <p className="merk">
           Merk: <label>{merk}</label>
