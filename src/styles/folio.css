@@ -17,7 +17,7 @@
   gap: 0.75rem;
 }
 
-.folio .our-works label {
+.folio .our-works h1 {
   text-align: center;
   font-size: 2em;
   font-weight: 600;
@@ -162,7 +162,7 @@
 }
 
 @media screen and (min-width: 640px) {
-  .folio .our-works label {
+  .folio .our-works h1 {
     font-size: 3em;
   }
 

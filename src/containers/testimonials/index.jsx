@@ -39,7 +39,7 @@ const Testimonials = () => {
     <div className="testimonials" style={{ backgroundImage: `url(${testimonial})` }}>
       <div className="our-testy">
         <div className="heading">
-          <label>Apa Pendapat Mitra Kami?</label>
+          <h1>Apa Pendapat Mitra Kami?</h1>
         </div>
         <div className="heading-viewport" ref={emblaRef}>
           <div className="heading-content">

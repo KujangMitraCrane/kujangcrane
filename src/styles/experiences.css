@@ -38,10 +38,9 @@
   line-height: 1em;
 }
 
-.experiences .layer .projects span,
-.experiences .layer .clients span,
-.experiences .layer .total-rents span {
-  font-size: 18px;
+.experiences .layer .projects h3,
+.experiences .layer .clients h3,
+.experiences .layer .total-rents h3 {
   color: var(--background-color);
 }
 

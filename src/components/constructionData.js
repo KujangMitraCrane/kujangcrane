@@ -36,7 +36,7 @@ const aboutData = [
     id: 1,
     label: 'Berpengalaman Selama 5 Tahun',
     icon: <FaRegCheckCircle />,
-    desc: 'Jasa sewa crane yang sudah beroparasi selama 5 tahun.',
+    desc: 'Jasa sewa crane yang sudah beroperasi selama 5 tahun.',
   },
   {
     id: 2,
@@ -54,7 +54,7 @@ const aboutData = [
     id: 4,
     label: 'safety & professional worker',
     icon: <GrUserWorker />,
-    desc: 'Jasa sewa crane yang mengutamakan keselamatan pekerja, meminimalisir terjadi kecelakaan.',
+    desc: 'Operator profesional, berpengalaman di bidangnya mendukung keselamatan pekerja',
   },
 ];
 
@@ -81,13 +81,13 @@ const servicesData = [
     id: 4,
     title: 'Buildings Support',
     image: highRiseBuilding,
-    desc: 'Membantu pembangunan gedung tinggi, seperti apartment',
+    desc: 'Membantu pembangunan gedung tinggi, seperti apartment dan lain-lain',
   },
   {
     id: 5,
     title: 'Warehouses Support',
     image: warehouse,
-    desc: 'Membantu pengangkatan material gudang, seperti tabung',
+    desc: 'Membantu pengangkatan material gudang, seperti tabung, dan lain-lain',
   },
   {
     id: 6,

@@ -28,7 +28,7 @@
   gap: 1rem;
 }
 
-.offering .our-offer .headline label {
+.offering .our-offer .headline h1 {
   line-height: 0.9em;
   font-size: 2em;
   font-weight: 600;
@@ -197,6 +197,7 @@
 .offering .offer-content-open .content .desc .merk,
 .offering .offer-content-open .content .desc .specs {
   color: var(--text-color);
+  font-weight: 500;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -243,7 +244,7 @@
     width: 100%;
   }
 
-  .offering .our-offer .headline label {
+  .offering .our-offer .headline h1 {
     font-size: 3em;
   }
 }

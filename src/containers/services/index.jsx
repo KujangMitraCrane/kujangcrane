@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <div className="services">
       <div className="our-services">
-        <label>Layanan Kami</label>
+        <h1>Layanan Kami</h1>
         <span />
         <p>Kujang Mitra Crane memberikan full support layanan kepada customer sesuai kebutuhan.</p>
       </div>

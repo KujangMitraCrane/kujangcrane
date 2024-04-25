@@ -18,7 +18,7 @@
   gap: 1rem;
 }
 
-.faq .why-us label {
+.faq .why-us h1 {
   color: var(--header-color);
   text-align: center;
   font-size: 2em;
@@ -95,7 +95,7 @@
     align-items: flex-start;
   }
 
-  .faq .why-us label {
+  .faq .why-us h1 {
     text-align: left;
     font-size: 3em;
   }

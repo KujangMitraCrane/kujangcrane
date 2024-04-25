@@ -16,9 +16,9 @@ const OfferContent = (props) => {
         <img src={image} alt={title} />
       </div>
       <div className="desc">
-        <label>
+        <h2>
           <div className="title">{title}</div>
-        </label>
+        </h2>
         <p className="merk">
           Merk: <label>{merk}</label>
         </p>

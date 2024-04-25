@@ -15,7 +15,7 @@
   gap: 1rem;
 }
 
-.contact .contact-header label {
+.contact .contact-header h1 {
   line-height: 0.8em;
   color: var(--header-color);
   font-size: 2em;
@@ -177,7 +177,7 @@ form .actions .submit:hover {
 }
 
 @media screen and (min-width: 640px) {
-  .contact .contact-header label {
+  .contact .contact-header h1 {
     font-size: 3em;
   }
 }

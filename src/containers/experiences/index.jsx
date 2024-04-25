@@ -8,15 +8,15 @@ const Experiences = () => {
       <div className="layer">
         <div className="projects">
           <label>300+</label>
-          <span>Total Proyek</span>
+          <h3>Total Proyek</h3>
         </div>
         <div className="clients">
           <label>500</label>
-          <span>Klien</span>
+          <h3>Klien</h3>
         </div>
         <div className="total-rents">
           <label>800+</label>
-          <span>Total Sewa</span>
+          <h3>Total Sewa</h3>
         </div>
       </div>
     </div>

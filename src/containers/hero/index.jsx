@@ -81,8 +81,9 @@ const Hero = () => {
           </div>
         </div>
         <p>
-          Jasa sewa crane terpercaya, murah & berkualitas, siap full support kepada customer. Menyediakan kebutuhan sewa crane diantaranya,
-          <i style={{ fontWeight: 'bold' }}> Mobile Crane, All Terrain Crane, Roughter Crane, Crawler Crane, Truck Mounted Crane & Forklift.</i> Menggunakan tenaga kerja bersertifikat dan alat yang berkualitas, menjamin keselamatan kerja.
+          Jasa sewa crane terpercaya, murah, & berkualitas di Bogor. Siap full support kepada customer. Menyediakan kebutuhan sewa crane diantaranya,
+          <i style={{ fontWeight: 'bold' }}>Mobile Crane, All Terrain Crane, Roughter Crane, Crawler Crane, Truck Mounted Crane & Forklift.</i>
+          Menyediakan sewa crane untuk wilayah <b>JABODETABEK, Indramayu, Bandung, Cianjur dan Sukabumi</b>. Menggunakan tenaga kerja profesional dan alat yang berkualitas, menjamin keselamatan kerja.
         </p>
         <div className="actions">
           <Link to="/alat-sewa">Alat Sewa</Link>
