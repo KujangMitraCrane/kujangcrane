@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className="about">
       <div className="about-us">
-        <h1>Tentang Kami</h1>
+        <h2>Tentang Kami</h2>
         <span />
         <p>
           Kujang Mitra Crane adalah perusahaan jasa sewa crane terpecaya, murah & berkualitas di Jawa Barat yang berlokasi di Bogor. Kujang Mitra Crane sudah menjalani berbagai pekerjaan diantaranya,
@@ -23,7 +23,7 @@ const About = () => {
             <div className="data" key={data.id}>
               <span>{data.icon}</span>
               <div className="data-desc">
-                <h3>{data.label}</h3>
+                <label>{data.label}</label>
                 <p>{data.desc}</p>
               </div>
             </div>

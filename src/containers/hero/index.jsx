@@ -76,7 +76,7 @@ const Hero = () => {
         <div className="viewport-title" ref={emblaTextRef}>
           <div className="title">
             {heroData.map((hero) => (
-              <label key={hero.id}>{hero.title}</label>
+              <h1 key={hero.id}>{hero.title}</h1>
             ))}
           </div>
         </div>

@@ -24,7 +24,7 @@ const Offering = ({ homePage }) => {
     <div className="offering">
       <div className="our-offer">
         <div className="headline">
-          <h1>Apa yang Kami Tawarkan?</h1>
+          <h2>Apa yang Kami Tawarkan?</h2>
           <span />
           <p>Kujang Mitra Crane memiliki berbagai crane yang dapat memenuhi kebutuhan anda. Mulai dari 3 ton - 500 ton</p>
         </div>

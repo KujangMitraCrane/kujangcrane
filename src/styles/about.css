@@ -16,7 +16,7 @@
   gap: 1rem;
 }
 
-.about .about-us h1 {
+.about .about-us h2 {
   line-height: 0.8em;
   font-size: 2em;
   font-weight: 600;
@@ -82,10 +82,11 @@
   gap: 0.5rem;
 }
 
-.about .about-content .content .data .data-desc h3 {
+.about .about-content .content .data .data-desc label {
   color: var(--header-color);
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
+  font-size: 1.25em;
 }
 
 .about .about-content .content .data .data-desc p {
@@ -97,7 +98,7 @@
 }
 
 @media screen and (min-width: 640px) {
-  .about .about-us h1 {
+  .about .about-us h2 {
     font-size: 3em;
   }
 }
@@ -108,7 +109,7 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .about .about-content .content .data:last-child .data-desc h3 {
+  .about .about-content .content .data:last-child .data-desc label {
     height: 3.5rem;
     overflow: hidden;
   }
