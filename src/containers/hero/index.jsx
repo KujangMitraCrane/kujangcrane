@@ -83,7 +83,7 @@ const Hero = () => {
         <p>
           Jasa sewa crane terpercaya, murah, & berkualitas di Bogor. Siap full support kepada customer. Menyediakan kebutuhan sewa crane diantaranya,
           <i style={{ fontWeight: 'bold' }}>Mobile Crane, All Terrain Crane, Roughter Crane, Crawler Crane, Truck Mounted Crane & Forklift.</i>
-          Menyediakan sewa crane untuk wilayah <b>JABODETABEK, Indramayu, Bandung, Cianjur dan Sukabumi</b>. Menggunakan tenaga kerja profesional dan alat yang berkualitas, menjamin keselamatan kerja.
+          Menyediakan sewa crane untuk wilayah <b>Jakarta, Bogor, Depok, Tangerang, Bekasi, Indramayu, Bandung, Cianjur dan Sukabumi</b>. Menggunakan tenaga kerja profesional dan alat yang berkualitas, menjamin keselamatan kerja.
         </p>
         <div className="actions">
           <Link to="/alat-sewa">Alat Sewa</Link>
