@@ -1,8 +1,5 @@
 export function generateXMLSitemap() {
-  const urls = [
-    { loc: 'https://kujangmitracrane.site/alat-sewa', lastmod: '2024-03-13', changefreq: 'weekly', priority: '0.8' },
-    { loc: 'https://kujangmitracrane.site/tentang-kami', lastmod: '2024-03-12', changefreq: 'weekly', priority: '0.7' },
-  ];
+  const urls = [{ loc: 'https://kujangmitracrane.site/layanan-kami', lastmod: '2024-03-13', changefreq: 'weekly', priority: '0.8' }];
 
   const xmlString = `<?xml version="1.0" encoding="UTF-8"?>
       <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
