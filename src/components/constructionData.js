@@ -1,22 +1,22 @@
 import truckCrane from '../assets/truck-crane.jpg';
 import towerCrane from '../assets/tower-crane.jpg';
-import allTerrainCrane from '../assets/all-terrain-crane.jpg';
-import mobileCrane from '../assets/mobile-crane.jpg';
+import allTerrainCrane from '../assets/all-terrain-crane.webp';
+import mobileCrane from '../assets/mobile-crane.webp';
 import mobileCrane2 from '../assets/mobile-crane1.jpeg';
-import roughterCrane from '../assets/roughter-crane.jpg';
+import roughterCrane from '../assets/roughter-crane.webp';
 import roughterCrane1 from '../assets/roughter-crane1.jpeg';
-import crawlerCrane from '../assets/crawler-crane.jpg';
+import crawlerCrane from '../assets/crawler-crane.webp';
 import crawlerCrane1 from '../assets/crawler-crane-1.jpeg';
 import crawlerCrane2 from '../assets/crawler-crane2.jpeg';
-import truckMountedCrane from '../assets/truck-mounted-crane.jpg';
-import forklift from '../assets/forklift.jpeg';
-import experiences from '../assets/experiences.jpg';
-import construction from '../assets/construction.jpg';
-import infrastructure from '../assets/infrastructures.jpg';
-import materialLift from '../assets/material-lift.jpg';
-import highRiseBuilding from '../assets/high-rise-building.jpg';
-import warehouse from '../assets/warehouses.jpg';
-import realEstate from '../assets/real-estate.jpg';
+import truckMountedCrane from '../assets/truck-mounted-crane.webp';
+import forklift from '../assets/forklift.webp';
+import experiences from '../assets/experiences.webp';
+import construction from '../assets/construction.webp';
+import infrastructure from '../assets/infrastructures.webp';
+import materialLift from '../assets/material-lift.webp';
+import highRiseBuilding from '../assets/all-terrain-crane.webp';
+import warehouse from '../assets/warehouses.webp';
+import realEstate from '../assets/real-estate.webp';
 import { GrUserWorker } from 'react-icons/gr';
 import { TbCarCrane, TbTools } from 'react-icons/tb';
 import { FaRegCheckCircle } from 'react-icons/fa';
@@ -29,7 +29,6 @@ const heroData = [
   { id: 3, title: 'Roughter Crane' },
   { id: 4, title: 'Crawler Crane' },
   { id: 5, title: 'TMC' },
-  { id: 6, title: 'Forklift' },
 ];
 const aboutData = [
   {
